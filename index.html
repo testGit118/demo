@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+</head>
+<body>
+<div id="videoss"></div>
+<button id="login">登录</button>
+<button id="view">预览</button>
+<div class="btn">
+    <table cellpadding="0" cellspacing="3" border="0" class="left">
+        <tr>
+            <td>
+                <input type="button" class="btn" value="左上" onmousedown="mouseUPLeftPTZControl(false);" onmouseup="mouseUPLeftPTZControl(true);" />
+                <input type="button" class="btn" value="上" onmousedown="mouseUpPTZControl(false);" onmouseup="mouseUpPTZControl(true);" />
+                <input type="button" class="btn" value="右上" onmousedown="mouseUPRightPTZControl(false);" onmouseup="mouseUPRightPTZControl(true);" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" class="btn" value="左" onmousedown="mouseLefPTZControl(false);" onmouseup="mouseLefPTZControl(true);" />
+                <input type="button" class="btn" id="openPtzLocate" value="开启" onclick="openPtzLocate();" />
+                <input type="button" class="btn" id="closePtzLocate" value="关闭" onclick="closePtzLocate();" />
+                <input type="button" class="btn" value="右" onmousedown="mouseRightPTZControl(false);" onmouseup="mouseRightPTZControl(true);" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" class="btn" value="左下" onmousedown="mouseDownLeftPTZControl(false);" onmouseup="mouseDownLeftPTZControl(true);" />
+                <input type="button" class="btn" value="下" onmousedown="mouseDownPTZControl(false);" onmouseup="mouseDownPTZControl(true);" />
+                <input type="button" class="btn" value="右下" onmousedown="mouseDownRightPTZControl(false);" onmouseup="mouseDownRightPTZControl(true);" />
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="btn1">
+    <table cellpadding="0" cellspacing="3" border="0">
+        <tr>
+            <td class="tt"><input type="button" class="btn2" value="变倍+" onmousedown="PTZZoomIn(false)" onmouseup="PTZZoomIn(true)"></td>
+            <td><input type="button" class="btn2" value="变倍-" onmousedown="PTZZoomout(false)" onmouseup="PTZZoomout(true)"></td>
+        </tr>
+        <tr>
+            <td class="tt"><input type="button" class="btn2" value="变焦+" onmousedown="PTZFocusIn(false)" onmouseup="PTZFocusIn(true)"></td>
+            <td><input type="button" class="btn2" value="变焦-" onmousedown="PTZFoucusOut(false)" onmouseup="PTZFoucusOut(true)"></td>
+        </tr>
+        <tr>
+            <td class="tt"><input type="button" class="btn2" value="光圈+" onmousedown="PTZIrisIn(false)" onmouseup="PTZIrisIn(true)"></td>
+            <td><input type="button" class="btn2" value="光圈-" onmousedown="PTZIrisOut(false)" onmouseup="PTZIrisOut(true)"></td>
+        </tr>
+    </table>
+</div>
+
+</body>
+<script src="module/foundation.js"></script>
+<script src="module/WebVideoCtrl.js"></script>
+<script src="module/modifyUI.js"></script>
+<script src="index.js"></script>
+
+</html>
