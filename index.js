@@ -1,4 +1,4 @@
-alert("第二次提交dev，不成功便成仁")
+alert("第三次创建分支")
 $(function () {
   var iRet = WebVideoCtrl1.checkPluginInstall();
   if(!iRet)return;
