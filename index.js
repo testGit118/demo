@@ -1,4 +1,4 @@
-alert(1)
+alert("第一次提交")
 $(function () {
   var iRet = WebVideoCtrl1.checkPluginInstall();
   if(!iRet)return;
