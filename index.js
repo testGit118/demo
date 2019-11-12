@@ -1,3 +1,4 @@
+alert(1)
 $(function () {
   var iRet = WebVideoCtrl1.checkPluginInstall();
   if(!iRet)return;
